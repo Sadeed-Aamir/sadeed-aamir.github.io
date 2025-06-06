@@ -11,9 +11,9 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827; /* bg-gray-900 */
-            color: #f3f4f6; /* text-gray-100 */
-            opacity: 0; /* Initially hidden for page load animation */
+            background-color: #111827; 
+            color: #f3f4f6; 
+            opacity: 0; 
             transition: opacity 0.5s ease-in-out;
         }
         .section-title {
@@ -21,7 +21,7 @@
         }
         .card {
             @apply bg-gray-800 p-6 rounded-lg shadow-xl;
-            transition-property: transform, box-shadow; /* Specific transitions */
+            transition-property: transform, box-shadow; 
             transition-duration: 300ms;
             transition-timing-function: ease-out;
         }
@@ -42,14 +42,14 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #1f2937; /* bg-gray-800 */
+            background: #1f2937; 
         }
         ::-webkit-scrollbar-thumb {
-            background: #06b6d4; /* bg-cyan-600 */
+            background: #06b6d4; 
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #0891b2; /* bg-cyan-700 */
+            background: #0891b2; 
         }
         header {
             background: rgba(17, 24, 39, 0.8); 
@@ -485,7 +485,6 @@
             window.addEventListener('scroll', changeLinkState);
 
             const downloadResumeButton = document.getElementById('download-resume');
-            // Correctly check if the href is the placeholder '#'
             if (downloadResumeButton.getAttribute('href') === '#') { 
                 console.warn("Download resume button link is '#'. Please update with actual resume file path.");
             }
